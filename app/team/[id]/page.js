@@ -52,6 +52,7 @@ export default function TeamMemberPage() {
 
   // app/team/[id]/page.js
 return (
+  <body className="animated-bg">
   <div className="container mx-auto px-4 py-8">
     <Card className="max-w-2xl mx-auto">
       <CardHeader>
@@ -69,7 +70,9 @@ return (
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-lg">{member.bio}</p>
+        {(member.bio_long || member.bio).split('\n').map((line, index) => (
+          <p key={index} className="text-lg">{line}</p>
+        ))}
       </CardContent>
       <div className="flex justify-between p-6">
         <Button variant="outline" size="icon" asChild>
@@ -85,6 +88,7 @@ return (
       </div>
     </Card>
   </div>
+  </body>
 )
 
 // export async function generateStaticParams() {

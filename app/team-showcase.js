@@ -7,6 +7,12 @@ import { Button } from "@/components/ui/button"
 import { Github, Linkedin,  Sun, Moon } from "lucide-react"
 import { teamMembers } from "@/data/teamMembers"
 import {HeroUIProvider} from "@heroui/react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import React from 'react';
+// import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+
+
 
 
 
@@ -70,6 +76,13 @@ export default function TeamShowcase() {
           </Card>
         ))}
       </div>
+
+      {/* animations */}
+      <DotLottieReact
+      src="https://lottie.host/a26c678b-5234-40f8-b616-c693eac2eddb/1GIAuRoiN9.lottie"
+      loop
+      autoplay
+    />
     </div>
     </main>
     </HeroUIProvider>

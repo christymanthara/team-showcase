@@ -27,7 +27,7 @@ export const teamMembers = [
     bio_long: "Bridging the gap between software and hardware. Interested in embedded systems.",
     image: "/images/natalija-tashkova.jpeg",
     github: "https://github.com/ajilataN",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/natalia-tashkova/",
   },
   {
     id: "tilen-stermecki",

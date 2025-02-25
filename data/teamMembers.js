@@ -5,8 +5,8 @@ export const teamMembers = [
       specialty: "Software Engineering",
       bio: "Passionate about AI and machine learning. Always up for a coding challenge.",
       image: "/placeholder.svg?height=100&width=100",
-      github: "https://github.com/alexj",
-      linkedin: "https://linkedin.com/in/alexj",
+      github: "https://github.com/christymanthara",
+      linkedin: "https://www.linkedin.com/in/christy-jo-manthara-81694baa/",
     },
     {
       name: "Anastasia Temova",

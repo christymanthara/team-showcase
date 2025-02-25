@@ -22,21 +22,16 @@ export const teamMembers = [
     name: "Anastasia Temova",
     specialty: "Electrical Engineering",
     bio: "Hardware enthusiast with a knack for IoT devices. Loves to tinker with circuits.",
-    bio_long: `Passionate Computer Science student 👩🏻‍💻 from Skopje, North Macedonia 🏛️, currently based in Koper, Slovenia 🏖️. I am pursuing my bachelor’s degree 🎓 at the University of Primorska, where I am dedicated to acquiring a robust understanding of computer science principles and technologies. My goal is to harness this knowledge to drive innovation 💡 and solve complex problems 🔍, aiming to make a meaningful and positive impact 🌟 in the tech industry. Through my studies and hands-on experiences, I strive to develop solutions that not only address current challenges but also pave the way for future advancements 🚀.
-    📍 Koper, Slovenia 🏖️
-    🏘️ Skopje, North Macedonia
-    💌 Reach me via email: temanastasa@gmail.com
-    👩🏼‍💻 ROS Developer and Frontend Developer at Ubiquity Robotics
-    `,
+    bio_long: `Passionate Computer Science student 👩🏻‍💻 from Skopje, North Macedonia 🏛️, currently based in Koper, Slovenia 🏖️. I am pursuing my bachelor's degree 🎓 at the University of Primorska, where I am dedicated to acquiring a robust understanding of computer science principles and technologies. My goal is to harness this knowledge to drive innovation 💡 and solve complex problems 🔍, aiming to make a meaningful and positive impact 🌟 in the tech industry. Through my studies and hands-on experiences, I strive to develop solutions that not only address current challenges but also pave the way for future advancements 🚀.`,
     image: "/images/anastasia-temova.jpeg",
     github: "https://github.com/ATemova",
     linkedin: "https://www.linkedin.com/in/anastasija-temova-558073212/",
     skills: [
-      { skill: "Circuit Design", value: 90 },
+      { skill: "Robotics", value: 90 },
+      { skill: "AI", value: 80 },
       { skill: "IoT Development", value: 85 },
       { skill: "Hardware Prototyping", value: 95 },
       { skill: "Microcontrollers", value: 80 },
-      { skill: "PCB Layout", value: 75 }
     ]
   },
   {
@@ -50,9 +45,9 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/natalia-tashkova/",
     skills: [
       { skill: "Embedded Systems", value: 90 },
+      { skill: "System Architecture", value: 80 },
       { skill: "FPGA Programming", value: 85 },
       { skill: "C/C++", value: 95 },
-      { skill: "System Architecture", value: 80 },
       { skill: "Low-level Programming", value: 75 }
     ]
   },

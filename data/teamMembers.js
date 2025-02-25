@@ -16,8 +16,8 @@ export const teamMembers = [
     bio: "Hardware enthusiast with a knack for IoT devices. Loves to tinker with circuits.",
     bio_long: "Hardware enthusiast with a knack for IoT devices. Loves to tinker with circuits.",
     image: "/images/anastasia-temova.jpeg",
-    github: "https://github.com/samlee",
-    linkedin: "https://linkedin.com/in/samlee",
+    github: "https://github.com/ATemova",
+    linkedin: "https://www.linkedin.com/in/anastasija-temova-558073212/",
   },
   {
     id: "natalija-tashkova",
@@ -26,8 +26,8 @@ export const teamMembers = [
     bio: "Bridging the gap between software and hardware. Interested in embedded systems.",
     bio_long: "Bridging the gap between software and hardware. Interested in embedded systems.",
     image: "/images/natalija-tashkova.jpeg",
-    github: "https://github.com/taylorw",
-    linkedin: "https://linkedin.com/in/taylorw",
+    github: "#", // to be confirmed: https://github.com/ajilataN
+    linkedin: "#",
   },
   {
     id: "tilen-stermecki",

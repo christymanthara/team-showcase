@@ -70,7 +70,9 @@ return (
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-lg">{member.bio_long || member.bio}</p>
+        {(member.bio_long || member.bio).split('\n').map((line, index) => (
+          <p key={index} className="text-lg">{line}</p>
+        ))}
       </CardContent>
       <div className="flex justify-between p-6">
         <Button variant="outline" size="icon" asChild>

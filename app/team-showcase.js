@@ -1,14 +1,34 @@
+"use client"  
+
+import { useState } from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin } from "lucide-react"
+import { Github, Linkedin,  Sun, Moon } from "lucide-react"
 import { teamMembers } from "@/data/teamMembers"
+import {HeroUIProvider} from "@heroui/react";
 
 
 
 export default function TeamShowcase() {
+  const [isDark, setIsDark] = useState(false);
   return (
-    <div className="container mx-auto px-4 py-8">
+    <HeroUIProvider>
+     <main className={`animated-bg ${isDark ? "dark" : "light"}`}>
+
+      <div className="container mx-auto px-4 py-8">
+
+        {/* Dark Mode Toggle Button */}
+        <div className="flex justify-end mb-4">
+            <Button
+              variant="outline"
+              onClick={() => setIsDark(!isDark)}
+              className="flex items-center gap-2"
+            >
+              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {isDark ? "Light Mode" : "Dark Mode"}
+            </Button>
+          </div>
       <h1 className="text-3xl font-bold text-center mb-8">Meet Our Hackathon Team</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {teamMembers.map((member, index) => (
@@ -51,6 +71,9 @@ export default function TeamShowcase() {
         ))}
       </div>
     </div>
+    </main>
+    </HeroUIProvider>
+    
   )
 }
 

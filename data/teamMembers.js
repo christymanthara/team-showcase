@@ -29,10 +29,10 @@ export const teamMembers = [
   {
     id: "tilen-stermecki",
     name: "Tilen Stermecki",
-    specialty: "Mechanical Engineering",
-    bio: "Robotics enthusiast with a passion for 3D printing and prototyping.",
+    specialty: "Computer Engineering",
+    bio: "Robotics enthusiast with a passion for embedded systems, prototyping, and 3D printing.",
     image: "/placeholder.svg?height=100&width=100",
-    github: "https://github.com/jordanp",
-    linkedin: "https://linkedin.com/in/jordanp",
+    github: "https://github.com/TilenS6",
+    linkedin: "https://www.linkedin.com/in/tilen-stermecki-671a961ab/",
   },
 ];

@@ -44,7 +44,7 @@ export const teamMembers = [
     name: "Natalija Tashkova",
     specialty: "Computer Engineering",
     bio: "Bridging the gap between software and hardware. Interested in embedded systems.",
-    bio_long: `Bridging the gap between software and hardware. Interested in embedded systems.`,
+    bio_long: `I'm Natalija Tashkova, a Computer Science student with a passion for software development, machine learning, and VR applications. I have experience in full-stack development, data analysis, and AI-driven solutions, working with technologies like Python, C#, JavaScript, and various frameworks. My projects range from business apps and financial tools to VR therapy applications. I enjoy tackling complex problems, building innovative solutions, and continuously learning new technologies.`,
     image: "/images/natalija-tashkova.jpeg",
     github: "https://github.com/ajilataN",
     linkedin: "https://www.linkedin.com/in/natalia-tashkova/",

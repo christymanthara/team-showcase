@@ -1,14 +1,15 @@
-"use client"  
+"use client"
 
 
 import { useRouter } from "next/navigation";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin,  Sun, Moon } from "lucide-react"
+import { Github, Linkedin, Sun, Moon } from "lucide-react"
 import { teamMembers } from "@/data/teamMembers"
-import {HeroUIProvider} from "@heroui/react";
+import { teamInfo } from "@/data/teamInfo"
+import { HeroUIProvider } from "@heroui/react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import React from 'react';
 // import { DotLottieReact } from '@lottiefiles/dotlottie-react';
@@ -20,18 +21,18 @@ import React from 'react';
 
 export default function TeamShowcase() {
 
-  
+
   const [isDark, setIsDark] = useState(false);
   const router = useRouter();
 
   return (
     <HeroUIProvider>
-     <main className={`animated-bg ${isDark ? "dark" : "light"}`}>
+      <main className={`animated-bg ${isDark ? "dark" : "light"}`}>
 
-      <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8">
 
-        {/* Dark Mode Toggle Button */}
-        <div className="flex justify-end mb-4">
+          {/* Dark Mode Toggle Button */}
+          <div className="flex justify-end mb-4">
             <Button
               variant="outline"
               onClick={() => setIsDark(!isDark)}
@@ -41,15 +42,22 @@ export default function TeamShowcase() {
               {isDark ? "Light Mode" : "Dark Mode"}
             </Button>
           </div>
-      <h1 className="text-3xl font-bold text-center mb-8">Meet Our Hackathon Team</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="text-center">
+            <h1 className={`text-6xl font-extrabold text-center drop-shadow-[0_0_20px_rgba(100,100,100,0.7)] animate-float`}>
+              {teamInfo.name}
+            </h1>
+            <p className="mt-10 text-2xl text-black">
+              {teamInfo.description}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
             {teamMembers.map((member) => (
               <Card
                 key={member.id} // Use member ID as key
                 className="flex flex-col cursor-pointer hover:shadow-lg transition duration-300"
                 onClick={() => {
                   router.push(`/team/${member.id}`)
-                    
                 }} // Navigate on click
               >
                 <CardHeader className="flex-grow">
@@ -88,18 +96,18 @@ export default function TeamShowcase() {
                 </CardFooter>
               </Card>
             ))}
-      </div>
+          </div>
 
-      {/* animations */}
-      <DotLottieReact
-      src="https://lottie.host/a26c678b-5234-40f8-b616-c693eac2eddb/1GIAuRoiN9.lottie"
-      loop
-      autoplay
-    />
-    </div>
-    </main>
+          {/* animations */}
+          <DotLottieReact
+            src="https://lottie.host/a26c678b-5234-40f8-b616-c693eac2eddb/1GIAuRoiN9.lottie"
+            loop
+            autoplay
+          />
+        </div>
+      </main>
     </HeroUIProvider>
-    
+
   )
 }
 

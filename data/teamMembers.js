@@ -61,17 +61,17 @@ export const teamMembers = [
     name: "Tilen Stermecki",
     specialty: "Computer Engineering",
     bio: "Robotics enthusiast with a passion for embedded systems, prototyping, and 3D printing.",
-    bio_long: `I'm talented Computer Technician with a strong foundation in programming and electronics. I have completed numerous projects, focusing primarily on the C/C++ programming language and microcontroller development, particularly with Atmel AVR. I also have a passion for 3D printing and enjoy hands-on work, whether it's prototyping, building, or experimenting with new technologies.
+    bio_long: `I'm a talented Computer Technician 🚀💻 with a strong foundation in programming 🖥️ and electronics ⚡! I have completed numerous projects 🎯, focusing primarily on C/C++ 📝 and microcontroller development 🤖, especially with Atmel AVR. I'm also passionate about 3D printing and love hands-on work ✋ whether it's prototyping 🏗️, building 🏠, or experimenting with new technologies 🔬!
     📚 Faculty of Computer and Information Science, Ljubljana, Slovenia.`,
     image: "/images/tilen-stermecki.jpeg",
     github: "https://github.com/TilenS6",
     linkedin: "https://www.linkedin.com/in/tilen-stermecki-671a961ab/",
     skills: [
-      { skill: "3D Modeling", value: 95 },
-      { skill: "CAD Design", value: 90 },
+      { skill: "C/C++", value: 95 },
+      { skill: "Networking", value: 85 },
+      { skill: "Low-level Programming", value: 90 },
+      { skill: "3D Modeling", value: 75 },
       { skill: "3D Printing", value: 85 },
-      { skill: "Prototyping", value: 90 },
-      { skill: "Material Science", value: 75 }
     ]
   },
 ];
